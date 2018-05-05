@@ -1,19 +1,12 @@
-- text: First menu
-  url: /first-menu/
+- item: Advanced
   subitems:
-    - text: First menu (sub)
-      url: /first-menu/first-menu-sub/
-      subitems:
-        - text: First menu (sub-sub)
-          url: /first-menu/first-menu-sub/first-menu-sub-sub/
-          subitems:
-          - text: First menu (sub-sub-sub)
-            url: /first-menu/first-menu-sub-sub/first-menu-sub-sub-sub/
-- text: Second menu
-  url: /second-menu/
+    - item: Code Analysis
+      url: /documentation/advanced/analysis/
+    - item: Custom data binding
+      url: /documentation/advanced/custom-data-binding/
+- item: Fundamentals
   subitems:
-    - text: Second menu (sub)
-      url: /second-menu/second-menu-sub/
+    - item: Data binding
       subitems:
-        - text: Second menu (sub-sub)
-          url: /Second-menu/first-menu-sub/
+        - item: Binding
+          url: /documentation/fundamentals/data-binding

@@ -16,21 +16,30 @@
     width: $doc-menu-width;
     position: fixed;
     bottom: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+   
 
     .category {
-      text-transform: uppercase;
-      font-weight: bold;
       margin-bottom: 0;
+    }
+
+    ul:first-child {
+      margin-top: 25px
     }
 
     ul {
       list-style-type: none;
       padding-left: 20px;
-      margin-top: 10px;
-      margin-bottom: 25px;
+      margin-top: 5px;
+      margin-bottom: 12px;
+
+      li {
+        margin: 5px 0
+      }
 
       a {
-        color: lighten($text-color, 25%);
+        color: $text-color;
         text-decoration: none;
       }
 
@@ -42,6 +51,8 @@
         color: $text-color;
         text-decoration: underline;
       }
+
+
     }
   }
   

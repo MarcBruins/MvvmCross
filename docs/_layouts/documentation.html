@@ -10,17 +10,24 @@ layout: default
         <script>
 
         $( document ).ready(function() {
-            $( "a" ).click(function( event ) {
-                event.preventDefault();
-            });
 
-             $('li').click(function() {
-                $(this).children('ul').toggle();
-                $(this).find( "i:first" ).toggleClass("downArrow");
-                return false;
+            if (localStorage.getItem("selectedItem") !== null) {
+                var item = localStorage.getItem("selectedItem")
+                var a = $('.doc-link:contains('+ item + ')')
+                $( a ).parents('li').find('i.rightArrow').toggleClass("downArrow");
+                $( a ).parents('li').children('ul').toggle();
+            }
+
+             $('span.category').click(function() {
+                $(this).next('ul').toggle();
+                $(this).find( 'i:first' ).toggleClass("downArrow");
              });
-        });
 
+             $('a.doc-link').click(function() {
+                localStorage.setItem("selectedItem", $(this).text());
+             });
+
+        });
         </script>
         <!-- {% assign navurl = page.url | remove: 'index.html' %}
         {% assign docs_by_category = site.documentation | group_by: "category" %}

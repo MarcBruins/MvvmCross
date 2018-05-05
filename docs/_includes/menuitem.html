@@ -4,21 +4,15 @@
 
 		{% if item.subitems %}
 		<li >
-			{% if item.url == navurl %}
-				<a href="{{ item.url | relative_url }}" class="active doc-link" role="link">  {{ item.text }} </a>
-			{% else %}
-				<a href="{{ item.url | relative_url }}" class="doc-link" role="link"><i class="rightArrow"></i>  {{ item.text }} </a>
-			{% endif %}
-
+			<span class="category" role="link"><i class="rightArrow"></i>  {{ item.item }}  </span>
 			{% include menuitem.html nav=item.subitems %}
-		
 		</li>
 		{% else %}
 		<li>
 			{% if item.url == navurl %}
-				<a href="{{ item.url | relative_url }}" class="active doc-link" role="link">  {{ item.text }} </a>
+				<a href="{{ item.url | relative_url }}" class="active doc-link" role="link">  {{ item.item }} </a>
 			{% else %}
-				<a href="{{ item.url | relative_url }}" class="doc-link" role="link">  {{ item.text }} </a>
+				<a href="{{ item.url | relative_url }}" class="doc-link" role="link">  {{ item.item }} </a>
 			{% endif %}
 		</li>
 		{% endif %}
