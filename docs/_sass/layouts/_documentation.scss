@@ -44,6 +44,30 @@
       }
     }
   }
+  
+  ul { position: relative; }
+  ul ul  {  display: none; }
+
+  .rightArrow {
+    border: solid #8a959c;
+    border-width: 0 3px 3px 0;
+    margin-right: 5px;
+    display: inline-block;
+    padding: 3px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+  }
+
+  .downArrow {
+    border: solid #8a959c;
+    border-width: 0 3px 3px 0;
+    margin-right: 5px;
+    display: inline-block;
+    padding: 3px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+  }
+
 
   > .documentation {
     margin-top: $documentation-margin / 2;
