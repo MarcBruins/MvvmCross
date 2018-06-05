@@ -1,12 +1,25 @@
 {% assign navurl = page.url | remove: 'index.html' %}
+
+{% if item.root %}
+<ul class="rootitem"/>
+{% else %}
 <ul>
+{% endif %}
+
 	{% for item in include.nav %}
 
 		{% if item.subitems %}
-		<li >
-			<span class="category" role="link"><i class="rightArrow"></i>  {{ item.item }}  </span>
-			{% include menuitem.html nav=item.subitems %}
-		</li>
+			{% if item.root %}
+			<li >
+				<p class="category" role="link">{{ item.item }}  </p>
+				{% include menuitem.html nav=item.subitems %}
+			</li>
+			{% else %}
+			<li >
+				<span class="category" role="link"><i class="rightArrow"></i>  {{ item.item }}  </span>
+				{% include menuitem.html nav=item.subitems %}
+			</li>
+			{% endif %}
 		{% else %}
 		<li>
 			{% if item.url == navurl %}

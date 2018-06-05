@@ -22,6 +22,9 @@
 
     .category {
       margin-bottom: 0;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 0;
     }
 
     ul:first-child {
@@ -39,8 +42,9 @@
       }
 
       a {
-        color: $text-color;
+        color: #8a959c;
         text-decoration: none;
+        text-transform: none;
       }
 
       a:hover {
@@ -58,6 +62,7 @@
   
   ul { position: relative; }
   ul ul  {  display: none; }
+  ul .rootitem{ display: block; }
 
   .rightArrow {
     border: solid #8a959c;

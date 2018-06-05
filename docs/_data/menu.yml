@@ -1,12 +1,203 @@
-- item: Advanced
+- item: Getting started
+  root: true
   subitems:
-    - item: Code Analysis
-      url: /documentation/advanced/analysis/
-    - item: Custom data binding
-      url: /documentation/advanced/custom-data-binding/
+    - item: Getting started with MvvmCross
+      url: /documentation/getting-started/getting-started
+    - item: MvvmCross Overview
+      url: /documentation/getting-started/mvvmcross-overview
+    - item: MvvmCross Packages
+      url: /documentation/getting-started/mvvmcross-packages
+    - item: .NET Standard & MvvmCross
+      url: /documentation/getting-started/netstandard
+    - item: Portable Class Library (PCL)
+      url: /documentation/getting-started/portable-class-library-pcl
+
 - item: Fundamentals
+  root: true
   subitems:
     - item: Data binding
+      url: /documentation/fundamentals/data-binding
+    - item: Navigation
+      url: /documentation/fundamentals/navigation
+    - item: ViewModel Lifecycle
+      url: /documentation/fundamentals/viewmodel-lifecycle
+    - item: View Presenters
+      url: /documentation/fundamentals/view-presenters
+    - item: Inversion of Control
+      url: /documentation/fundamentals/inversion-of-control-ioc
+    - item: Dependency injection
+      url: /documentation/fundamentals/dependency-injection
+    - item: Diagnostic & Logging
+      url: /documentation/fundamentals/logging
+    - item: Value converters
+      url: /documentation/fundamentals/value-converters
+    - item: Value combiners
+      url: /documentation/fundamentals/value-combiners
+    - item: Testing
+      url: /documentation/fundamentals/testing
+    - item: Linking
+      url: /documentation/fundamentals/linking
+
+- item: Advanced
+  root: true
+  subitems:
+    - item: Customizing App and Setup
+      url: /documentation/advanced/customizing-using-App-and-Setup
+    - item: Custom Data Binding
+      url: /documentation/advanced/custom-data-binding
+    - item: Code Analysis
+      url: /documentation/advanced/analysis
+    - item: Async operations with MvxNotifyTask
+      url: /documentation/advanced/mvxnotifytask
+    - item: ReSharper Annotations
+      url: /documentation/advanced/resharper-annotations
+    - item: ViewModel to View Interaction
+      url: /documentation/advanced/mvxinteraction
+
+- item: Platforms
+  root: true
+  subitems:
+    - item: Android
       subitems:
-        - item: Binding
-          url: /documentation/fundamentals/data-binding
+      - item: Android MvxLinearLayout
+        url: /documentation/platform/android/android-linearlayout
+      - item: Android support library
+        url: /documentation/platform/android/android-support-library
+      - item: Android Swipe to Refresh
+        url: /documentation/platform/android/android-swipe-refresh
+      - item: Android View Presenter
+        url: /documentation/platform/android/android-view-presenter
+    - item: iOS
+      subitems:
+      - item: iOS Tables and Cells
+        url: /documentation/platform/ios/ios-tables-and-cells
+      - item: iOS UIRefreshControl
+        url: /documentation/platform/ios/ios-uirefreshcontrol
+      - item: Approaches for iOS UIs
+        url: /documentation/platform/ios/ios-user-interfaces-approaches
+      - item: iOS View Presenter
+        url: /documentation/platform/ios/ios-view-presenter
+      - item: Mac View Presenter
+        url: /documentation/platform/macos/mac-view-presenter
+      - item: Approaches for tvOS UIs
+        url: /documentation/platform/tvos/tvos-user-interfaces-approaches
+      - item: tvOS View Presenter
+        url: /documentation/platform/tvos/tvos-view-presenter
+    - item: Xamarin Forms
+      subitems:
+      - item: Xamarin.Forms Startup Customization
+        url: /documentation/platform/xamarin.forms/xamarin-forms-customization
+      - item: Xamarin.Forms View Presenter
+        url: /documentation/platform/xamarin.forms/xamarin-forms-view-presenter
+      - item: MvvmCross for Xamarin.Forms
+        url: /documentation/platform/xamarin.forms/xamarin-forms
+    - item: UWP
+      subitems:
+      - item: Universal Windows platform (UWP)
+        url: /documentation/platform/uwp/universal-windows-platform-uwp
+      - item: WPF View Presenter
+        url: /documentation/platform/wpf/wpf-view-presenter
+      
+- item: Plugins
+  root: true
+  subitems:
+    - item: 3rd party plugins
+      url: /documentation/plugins/3rd-party-plugins
+    - item: Accelerometer
+      url: /documentation/plugins/accelerometer
+    - item: Color
+      url: /documentation/plugins/color
+    - item: Email
+      url: /documentation/plugins/email
+    - item: FieldBinding
+      url: /documentation/plugins/fieldbinding
+    - item: File
+      url: /documentation/plugins/file
+    - item: Getting Started
+      url: /documentation/plugins/getting-started
+    - item: iOS Sidebar
+      url: /documentation/plugins/ios-sidebar
+    - item: Json
+      url: /documentation/plugins/json
+    - item: JsonLocalization
+      url: /documentation/plugins/jsonlocalisation
+    - item: Location
+      url: /documentation/plugins/location
+    - item: Messenger
+      url: /documentation/plugins/messenger
+    - item: MethodBinding
+      url: /documentation/plugins/methodbinding
+    - item: Network
+      url: /documentation/plugins/network
+    - item: PhoneCall
+      url: /documentation/plugins/phonecall
+    - item: PictureChooser
+      url: /documentation/plugins/picturechooser
+    - item: Plugins development
+      url: /documentation/plugins/plugins-development
+    - item: ResourceLoader
+      url: /documentation/plugins/resourceloader
+    - item: ResxLocalization
+      url: /documentation/plugins/resxlocalization
+    - item: Share
+      url: /documentation/plugins/share
+    - item: Visibility
+      url: /documentation/plugins/visibility
+    - item: WebBrowser
+      url: /documentation/plugins/webbrowser
+
+- item: Samples
+  root: true
+  subitems:
+    - item: Samples
+      url: /documentation/samples/samples
+
+- item: Tutorials
+  root: true
+  subitems:
+    - item: The TipCalc tutorial
+      url: /documentation/tutorials/tipcalc/the-tip-calc-tutorial
+    - item: The Core Project
+      url: /documentation/tutorials/tipcalc/the-core-project
+    - item: TipCalc Android Project
+      url: /documentation/tutorials/tipcalc/a-xamarinandroid-ui-project
+    - item: TipCalc iOS Project
+      url: /documentation/tutorials/tipcalc/a-xamarinios-ui-project
+    - item: TipCalc WPF Project
+      url: /documentation/tutorials/tipcalc/a-windows-universal-app-platform-project
+    - item: TipCalc Xamarin.Forms
+      url: /documentation/tutorials/tipcalc/a-xamarin-forms-version
+    - item: TipCalc - Summary
+      url: /documentation/tutorials/tipcalc/tip-calculator-a-recap
+    - item: Extra - Views and ViewModels
+      url: /documentation/tutorials/tipcalc/a-note-about-views-and-viewmodels
+    - item: Extra - Navigation
+      url: /documentation/tutorials/tipcalc/the-tip-calc-navigation
+
+- item: Upgrading
+  root: true
+  subitems:
+    - item: Upgrade from 3 to MvvmCross 4
+      url: /documentation/upgrading/upgrade-to-mvvmcross-40
+    - item: Upgrade from 4 to MvvmCross 5
+      url: /documentation/upgrading/upgrade-to-mvvmcross-50
+    - item: Upgrade from 5 to MvvmCross 6
+      url: /documentation/upgrading/upgrade-to-mvvmcross-60
+
+- item: Contributing
+  root: true
+  subitems:
+    - item: New contributions
+      url: /documentation/contributing/contribute
+    - item: Style Guide
+      url: /documentation/contributing/mvvmcross-docs-style-guide
+    - item: Debugging with Symbols
+      url: /documentation/contributing/debugging-with-symbols
+    - item: References
+      url: /documentation/contributing/references
+    - item: Licensing
+      url: /documentation/contributing/licensing
+    - item: Acknowledgements
+      url: /documentation/contributing/acknowledgements
+    - item: .NET Foundation
+      url: /documentation/contributing/dotnet-foundation
